@@ -42,3 +42,13 @@ d:\documents\visual studio 2015\Projects\ElTrompo\ElTrompo\bin\Debug\ro\Xceed.Wp
 d:\documents\visual studio 2015\Projects\ElTrompo\ElTrompo\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
 d:\documents\visual studio 2015\Projects\ElTrompo\ElTrompo\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
 d:\documents\visual studio 2015\Projects\ElTrompo\ElTrompo\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\Documents\ElTrompo\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\Documents\ElTrompo\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\Documents\ElTrompo\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\Documents\ElTrompo\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\Documents\ElTrompo\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\Documents\ElTrompo\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\Documents\ElTrompo\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\Documents\ElTrompo\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\Documents\ElTrompo\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\Documents\ElTrompo\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
