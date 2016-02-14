@@ -1,1 +1,2 @@
 d:\documents\visual studio 2015\Projects\ElTrompo\ElTrompo\bin\Debug\ElTrompo.exe.config
+D:\Documents\ElTrompo\bin\Debug\ElTrompo.exe.config
