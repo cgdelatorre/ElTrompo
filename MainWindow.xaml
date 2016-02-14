@@ -27,21 +27,21 @@
         <Label x:Name="lblTurno" Content="Turno" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="243,218,0,0" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
         <Label x:Name="lblSector" Content="Sector" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,218,0,0" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
         <Label x:Name="lblClave" Content="Clave" HorizontalAlignment="Left" Margin="311,55,0,0" VerticalAlignment="Top" Width="44" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
-        <ComboBox x:Name="cbSector" HorizontalAlignment="Left" Margin="70,222,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="-0.473,-1.455" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
-        <ComboBox x:Name="cbTurno" HorizontalAlignment="Left" Margin="305,222,0,0" VerticalAlignment="Top" Width="110" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
+        <ComboBox x:Name="cbSector" HorizontalAlignment="Left" Margin="70,222,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="-0.473,-1.455" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="8"/>
+        <ComboBox x:Name="cbTurno" HorizontalAlignment="Left" Margin="305,222,0,0" VerticalAlignment="Top" Width="110" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="9"/>
         <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Height="23" Margin="20,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
-        <ComboBox x:Name="cbEstados" HorizontalAlignment="Left" Margin="20,191,0,0" VerticalAlignment="Top" Width="135" IsEditable="True" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" SelectionChanged="cbEstados_SelectionChanged"/>
+        <ComboBox x:Name="cbEstados" HorizontalAlignment="Left" Margin="20,191,0,0" VerticalAlignment="Top" Width="135" IsEditable="True" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" SelectionChanged="cbEstados_SelectionChanged" Panel.ZIndex="5"/>
 
-        <xctk:MaskedTextBox x:Name="tbCelular" HorizontalAlignment="Left" Margin="20,135,0,0" TextWrapping="Wrap" Text="MaskedTextBox" VerticalAlignment="Top" Mask="(000) 000-0000" Height="25" Width="100" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
-        <TextBox x:Name="tbClave" HorizontalAlignment="Left" Height="23" Margin="315,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
-        <xctk:MaskedTextBox x:Name="tbTelefono" HorizontalAlignment="Left" Margin="125,135,0,0" TextWrapping="Wrap" Text="MaskedTextBox" VerticalAlignment="Top" Mask="(000) 000-0000" Height="25" Width="105" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
-        <TextBox x:Name="tbCorreoElectronico" HorizontalAlignment="Left" Height="23" Margin="235,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
-        <ComboBox x:Name="cbMunicipios" HorizontalAlignment="Left" Margin="167,191,0,0" VerticalAlignment="Top" Width="135" IsEditable="True" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
+        <xctk:MaskedTextBox x:Name="tbCelular" HorizontalAlignment="Left" Margin="20,135,0,0" TextWrapping="Wrap" Text="MaskedTextBox" VerticalAlignment="Top" Mask="(000) 000-0000" Height="25" Width="100" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="2"/>
+        <TextBox x:Name="tbClave" HorizontalAlignment="Left" Height="23" Margin="315,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="1"/>
+        <xctk:MaskedTextBox x:Name="tbTelefono" HorizontalAlignment="Left" Margin="125,135,0,0" TextWrapping="Wrap" Text="MaskedTextBox" VerticalAlignment="Top" Mask="(000) 000-0000" Height="25" Width="105" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="3"/>
+        <TextBox x:Name="tbCorreoElectronico" HorizontalAlignment="Left" Height="23" Margin="235,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="4"/>
+        <ComboBox x:Name="cbMunicipios" HorizontalAlignment="Left" Margin="167,191,0,0" VerticalAlignment="Top" Width="135" IsEditable="True" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="6"/>
 
-        <TextBox x:Name="tbColonia" HorizontalAlignment="Left" Height="23" Margin="311,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
+        <TextBox x:Name="tbColonia" HorizontalAlignment="Left" Height="23" Margin="311,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="7"/>
         <Label x:Name="lbl" Content="Alta Cliente" HorizontalAlignment="Left" Margin="15,14.143,0,0" VerticalAlignment="Top" FontSize="21.333" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" FontWeight="Bold"/>
-        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="140,275,0,0" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="235,275,0,0" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
+        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="140,275,0,0" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="10"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="235,275,0,0" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="11"/>
 
 
     </Grid>
