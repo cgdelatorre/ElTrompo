@@ -8,12 +8,12 @@
         mc:Ignorable="d"
         Title="Sistema" Height="350" Width="525">
     <Grid>
-        <Label x:Name="lblNombre" Content="Nombre" HorizontalAlignment="Left" Margin="23,20,0,0" VerticalAlignment="Top" Height="26" Width="57"/>
-        <Label x:Name="lblTelefono" Content="Telefono" HorizontalAlignment="Left" Margin="19,219,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblCelSec" Content="Celular" HorizontalAlignment="Left" Margin="19,247,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblCorreo" Content="Correo Electronico" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,273,0,0"/>
+        <Label x:Name="lblNombre" Content="Nombre Completo" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Height="26" Width="116"/>
+        <Label x:Name="lblTelefono" Content="Telefono" HorizontalAlignment="Left" Margin="120,82,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.5"/>
+        <Label x:Name="lblCelSec" Content="Celular" HorizontalAlignment="Left" Margin="15,82,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCorreo" Content="Correo Electronico" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="230,82,0,0"/>
         <Label x:Name="lblMunicipio" Content="Municipio" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,167,0,0"/>
-        <Label x:Name="lblEstado" Content="Estado" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,84,0,0"/>
+        <Label x:Name="lblEstado" Content="Estado" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="195,141,0,0"/>
         <Label x:Name="lblColonia" Content="Colonia" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,193,0,0" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -26,13 +26,16 @@
         </Label>
         <Label x:Name="lblTurno" Content="Turno" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="424,243,0,0"/>
         <Label x:Name="lblSector" Content="Sector" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,243,0,0"/>
-        <Label x:Name="lblClave" Content="Clave" HorizontalAlignment="Left" Margin="415,20,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label x:Name="lblClave" Content="Clave" HorizontalAlignment="Left" Margin="306,28,0,0" VerticalAlignment="Top" Width="44"/>
         <ComboBox x:Name="cbSector" HorizontalAlignment="Left" Margin="177,287,0,0" VerticalAlignment="Top" Width="110"/>
         <ComboBox x:Name="cbTurno" HorizontalAlignment="Left" Margin="397,287,0,0" VerticalAlignment="Top" Width="110"/>
-        <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Height="23" Margin="23,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264"/>
-        <ComboBox x:Name="cbEstados" HorizontalAlignment="Left" Margin="23,110,0,0" VerticalAlignment="Top" Width="110" IsEditable="True"/>
+        <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Height="23" Margin="15,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264"/>
+        <ComboBox x:Name="cbEstados" HorizontalAlignment="Left" Margin="130,205,0,0" VerticalAlignment="Top" Width="110" IsEditable="True"/>
 
-        <xctk:MaskedTextBox x:Name="maskedTextBox" HorizontalAlignment="Left" Margin="253,145,0,0" TextWrapping="Wrap" Text="MaskedTextBox" VerticalAlignment="Top" Mask="(000) 000-0000" Height="25" Width="117"/>
+        <xctk:MaskedTextBox x:Name="tbCelular" HorizontalAlignment="Left" Margin="15,108,0,0" TextWrapping="Wrap" Text="MaskedTextBox" VerticalAlignment="Top" Mask="(000) 000-0000" Height="25" Width="86"/>
+        <TextBox x:Name="tbClave" HorizontalAlignment="Left" Height="23" Margin="310,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+        <xctk:MaskedTextBox x:Name="tbTelefono" HorizontalAlignment="Left" Margin="120,108,0,0" TextWrapping="Wrap" Text="MaskedTextBox" VerticalAlignment="Top" Mask="(000) 000-0000" Height="25" Width="86"/>
+        <TextBox x:Name="tbCorreoElectronico" HorizontalAlignment="Left" Height="23" Margin="230,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180"/>
 
     </Grid>
 </Window>
