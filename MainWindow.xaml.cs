@@ -404,6 +404,8 @@ namespace ElTrompo
         {
             InitializeComponent();
 
+            tbNombre.Focus();
+
             for (int i = 0; i < turno.Length; i++)
             {
                 cbTurno.Items.Add(turno[i]);
@@ -653,6 +655,12 @@ namespace ElTrompo
                     }
                     break;
             }
+        }
+
+        private void btnGuardar_Click(object sender, RoutedEventArgs e)
+        {
+            Alta darAlta = new Alta();
+            darAlta.Cliente();
         }
     }
 }

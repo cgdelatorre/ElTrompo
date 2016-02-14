@@ -11,7 +11,7 @@ namespace ElTrompo
         //la implementacion de los metodos va a ser con un patron de diseño
         //de software. El patron que se implemento es data source architectural pattern.
 
-        public void Clientes()
+        public void Cliente()
         {
             //sql query
         }

@@ -350,6 +350,12 @@ namespace ElTrompo {
             return;
             case 23:
             this.btnGuardar = ((System.Windows.Controls.Button)(target));
+            
+            #line 43 "..\..\MainWindow.xaml"
+            this.btnGuardar.Click += new System.Windows.RoutedEventHandler(this.btnGuardar_Click);
+            
+            #line default
+            #line hidden
             return;
             case 24:
             this.btnCancelar = ((System.Windows.Controls.Button)(target));
