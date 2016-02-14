@@ -8,17 +8,5 @@ namespace ElTrompo
 {
     class Alta
     {
-        //dar de alta clientes
-        public static void Cliente()
-        {
-            
-        }
-
-        //dar de alta agenda
-        public static void Agenda()
-        {
-
-        }
-
     }
 }
