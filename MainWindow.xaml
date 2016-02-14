@@ -7,7 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Label x:Name="label" Content="Hola" HorizontalAlignment="Left" Margin="168,105,0,0" VerticalAlignment="Top" Height="79" Width="129"/>
+        <Label x:Name="lblNombre" Content="Nombre" HorizontalAlignment="Left" Margin="23,20,0,0" VerticalAlignment="Top" Height="26" Width="57"/>
+        <Label x:Name="lblTelefono" Content="Telefono" HorizontalAlignment="Left" Margin="23,124,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCelSec" Content="Celular" HorizontalAlignment="Left" Margin="23,152,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCorreo" Content="Correo Electronico" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,178,0,0"/>
+        <Label x:Name="lblMunicipio" Content="Municipio" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,72,0,0"/>
+        <Label x:Name="lblEstado" Content="Estado" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,46,0,0"/>
+        <Label x:Name="lblColonia" Content="Colonia" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,98,0,0"/>
+        <Label x:Name="lblTurno" Content="Turno" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,230,0,0"/>
+        <Label x:Name="lblSector" Content="Sector" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,204,0,0"/>
 
     </Grid>
 </Window>
