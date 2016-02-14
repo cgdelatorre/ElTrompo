@@ -8,5 +8,14 @@ namespace ElTrompo
 {
     class Alta
     {
+        public void Clientes()
+        {
+            //sql query
+        }
+
+        public void Agenda()
+        {
+            //sql query
+        }
     }
 }
