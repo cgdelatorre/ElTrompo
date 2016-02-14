@@ -14,8 +14,11 @@
         <Label x:Name="lblMunicipio" Content="Municipio" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,72,0,0"/>
         <Label x:Name="lblEstado" Content="Estado" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,46,0,0"/>
         <Label x:Name="lblColonia" Content="Colonia" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,98,0,0"/>
-        <Label x:Name="lblTurno" Content="Turno" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,230,0,0"/>
-        <Label x:Name="lblSector" Content="Sector" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,204,0,0"/>
+        <Label x:Name="lblTurno" Content="Turno" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="302,212,0,0"/>
+        <Label x:Name="lblSector" Content="Sector" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="88,212,0,0"/>
+        <Label x:Name="lblClave" Content="Clave" HorizontalAlignment="Left" Margin="247,46,0,0" VerticalAlignment="Top" Width="64"/>
+        <ComboBox x:Name="cbSector" HorizontalAlignment="Left" Margin="23,256,0,0" VerticalAlignment="Top" Width="142"/>
+        <ComboBox x:Name="cbTurno" HorizontalAlignment="Left" Margin="247,256,0,0" VerticalAlignment="Top" Width="142"/>
 
     </Grid>
 </Window>

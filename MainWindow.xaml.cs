@@ -23,6 +23,20 @@ namespace ElTrompo
         public MainWindow()
         {
             InitializeComponent();
+            string[] turno = { "Vespertino", "Matutino", "Diurno" };
+            string[] sector = { "Publica", "Privada" };
+
+            for (int i = 0; i < turno.Length; i++)
+            {
+                cbTurno.Items.Add(turno[i]);
+            }
+
+            for (int i = 0; i < sector.Length; i++)
+            {
+                cbSector.Items.Add(sector[i]);
+            }
+            
+
         }
     }
 }
