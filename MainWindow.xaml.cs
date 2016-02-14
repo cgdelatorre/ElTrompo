@@ -25,6 +25,11 @@ namespace ElTrompo
             InitializeComponent();
             string[] turno = { "Vespertino", "Matutino", "Diurno" };
             string[] sector = { "Publica", "Privada" };
+            string[] estados = {"Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Coahuila", "Colima",
+                                "Chiapas", "Ciudad de Mexico", "Chihuahua", "Durango", "Guanajuato", "Guerrero", "Hidalgo",
+                                "Jalisco", "Michoacan", "Morelos", "Nayarit", "Nuevo Leon", "Oaxaca", "Puebla", "Queretaro",
+                                "Quintana Roo", "San Luis Potosi", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala",
+                                "Veracruz", "Yucatan", "Zacatecas"};
 
             for (int i = 0; i < turno.Length; i++)
             {
@@ -34,6 +39,11 @@ namespace ElTrompo
             for (int i = 0; i < sector.Length; i++)
             {
                 cbSector.Items.Add(sector[i]);
+            }
+
+            for (int i = 0; i < estados.Length; i++)
+            {
+                cbEstados.Items.Add(estados[i]);
             }
             
 

@@ -8,17 +8,28 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Label x:Name="lblNombre" Content="Nombre" HorizontalAlignment="Left" Margin="23,20,0,0" VerticalAlignment="Top" Height="26" Width="57"/>
-        <Label x:Name="lblTelefono" Content="Telefono" HorizontalAlignment="Left" Margin="23,124,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblCelSec" Content="Celular" HorizontalAlignment="Left" Margin="23,152,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblCorreo" Content="Correo Electronico" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,178,0,0"/>
-        <Label x:Name="lblMunicipio" Content="Municipio" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,72,0,0"/>
-        <Label x:Name="lblEstado" Content="Estado" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,46,0,0"/>
-        <Label x:Name="lblColonia" Content="Colonia" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,98,0,0"/>
-        <Label x:Name="lblTurno" Content="Turno" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="302,212,0,0"/>
-        <Label x:Name="lblSector" Content="Sector" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="88,212,0,0"/>
-        <Label x:Name="lblClave" Content="Clave" HorizontalAlignment="Left" Margin="247,46,0,0" VerticalAlignment="Top" Width="64"/>
-        <ComboBox x:Name="cbSector" HorizontalAlignment="Left" Margin="23,256,0,0" VerticalAlignment="Top" Width="142"/>
-        <ComboBox x:Name="cbTurno" HorizontalAlignment="Left" Margin="247,256,0,0" VerticalAlignment="Top" Width="142"/>
+        <Label x:Name="lblTelefono" Content="Telefono" HorizontalAlignment="Left" Margin="19,219,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCelSec" Content="Celular" HorizontalAlignment="Left" Margin="19,247,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCorreo" Content="Correo Electronico" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,273,0,0"/>
+        <Label x:Name="lblMunicipio" Content="Municipio" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,167,0,0"/>
+        <Label x:Name="lblEstado" Content="Estado" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,84,0,0"/>
+        <Label x:Name="lblColonia" Content="Colonia" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,193,0,0" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.015"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="lblTurno" Content="Turno" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="424,243,0,0"/>
+        <Label x:Name="lblSector" Content="Sector" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,243,0,0"/>
+        <Label x:Name="lblClave" Content="Clave" HorizontalAlignment="Left" Margin="415,20,0,0" VerticalAlignment="Top" Width="64"/>
+        <ComboBox x:Name="cbSector" HorizontalAlignment="Left" Margin="177,287,0,0" VerticalAlignment="Top" Width="110"/>
+        <ComboBox x:Name="cbTurno" HorizontalAlignment="Left" Margin="397,287,0,0" VerticalAlignment="Top" Width="110"/>
+        <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Height="23" Margin="23,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264"/>
+        <ComboBox x:Name="cbEstados" HorizontalAlignment="Left" Margin="23,110,0,0" VerticalAlignment="Top" Width="110" IsEditable="True"/>
 
     </Grid>
 </Window>
