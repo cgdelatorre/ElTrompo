@@ -12,9 +12,9 @@
         <Label x:Name="lblTelefono" Content="Telefono" HorizontalAlignment="Left" Margin="125,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.5" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
         <Label x:Name="lblCelSec" Content="Celular" HorizontalAlignment="Left" Margin="20,109,0,0" VerticalAlignment="Top" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
         <Label x:Name="lblCorreo" Content="Correo Electronico" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="235,109,0,0" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
-        <Label x:Name="lblMunicipio" Content="Municipio" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="160,165,0,0" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
+        <Label x:Name="lblMunicipio" Content="Municipio" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="161,165,0,0" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
         <Label x:Name="lblEstado" Content="Estado" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,165,0,0" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
-        <Label x:Name="lblColonia" Content="Colonia" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="285,166,0,0" RenderTransformOrigin="0.5,0.5" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy">
+        <Label x:Name="lblColonia" Content="Colonia" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="306,167,0,0" RenderTransformOrigin="0.5,0.5" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -30,17 +30,19 @@
         <ComboBox x:Name="cbSector" HorizontalAlignment="Left" Margin="70,222,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="-0.473,-1.455" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
         <ComboBox x:Name="cbTurno" HorizontalAlignment="Left" Margin="305,222,0,0" VerticalAlignment="Top" Width="110" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
         <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Height="23" Margin="20,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
-        <ComboBox x:Name="cbEstados" HorizontalAlignment="Left" Margin="20,191,0,0" VerticalAlignment="Top" Width="135" IsEditable="True" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
+        <ComboBox x:Name="cbEstados" HorizontalAlignment="Left" Margin="20,191,0,0" VerticalAlignment="Top" Width="135" IsEditable="True" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" SelectionChanged="cbEstados_SelectionChanged"/>
 
         <xctk:MaskedTextBox x:Name="tbCelular" HorizontalAlignment="Left" Margin="20,135,0,0" TextWrapping="Wrap" Text="MaskedTextBox" VerticalAlignment="Top" Mask="(000) 000-0000" Height="25" Width="100" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
         <TextBox x:Name="tbClave" HorizontalAlignment="Left" Height="23" Margin="315,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
         <xctk:MaskedTextBox x:Name="tbTelefono" HorizontalAlignment="Left" Margin="125,135,0,0" TextWrapping="Wrap" Text="MaskedTextBox" VerticalAlignment="Top" Mask="(000) 000-0000" Height="25" Width="105" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
         <TextBox x:Name="tbCorreoElectronico" HorizontalAlignment="Left" Height="23" Margin="235,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
-        <TextBox x:Name="tbMunicipio" HorizontalAlignment="Left" Height="23" Margin="160,190,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
-        <TextBox x:Name="tbColonia" HorizontalAlignment="Left" Height="23" Margin="285,190,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
+        <ComboBox x:Name="cbMunicipios" HorizontalAlignment="Left" Margin="167,191,0,0" VerticalAlignment="Top" Width="135" IsEditable="True" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
+
+        <TextBox x:Name="tbColonia" HorizontalAlignment="Left" Height="23" Margin="311,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
         <Label x:Name="lbl" Content="Alta Cliente" HorizontalAlignment="Left" Margin="15,14.143,0,0" VerticalAlignment="Top" FontSize="21.333" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" FontWeight="Bold"/>
         <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="140,275,0,0" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
         <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="235,275,0,0" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
+
 
     </Grid>
 </Window>
