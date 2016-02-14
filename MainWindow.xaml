@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ElTrompo"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Class="ElTrompo.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Sistema" Height="350" Width="525">
     <Grid>
         <Label x:Name="lblNombre" Content="Nombre" HorizontalAlignment="Left" Margin="23,20,0,0" VerticalAlignment="Top" Height="26" Width="57"/>
         <Label x:Name="lblTelefono" Content="Telefono" HorizontalAlignment="Left" Margin="19,219,0,0" VerticalAlignment="Top"/>
