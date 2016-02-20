@@ -15,16 +15,7 @@
             <Label x:Name="lblCorreo" Content="Correo Electronico" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="235" Canvas.Top="109"/>
             <Label x:Name="lblMunicipio" Content="Municipio" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="161" Canvas.Top="165"/>
             <Label x:Name="lblEstado" Content="Estado" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="15" Canvas.Top="165"/>
-            <Label x:Name="lblColonia" Content="Colonia" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="306" Canvas.Top="167">
-                <Label.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="0.015"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Label.RenderTransform>
-            </Label>
+            <Label x:Name="lblColonia" Content="Colonia" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="306" Canvas.Top="167"/>
             <Label x:Name="lblTurno" Content="Turno" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="243" Canvas.Top="218"/>
             <Label x:Name="lblSector" Content="Sector" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="20" Canvas.Top="218"/>
             <Label x:Name="lblClave" Content="Clave" HorizontalAlignment="Left" VerticalAlignment="Top" Width="44" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="311" Canvas.Top="55"/>
