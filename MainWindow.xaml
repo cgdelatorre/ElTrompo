@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ElTrompo"
-        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Class="ElTrompo.MainWindow"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Name="MainWindows" x:Class="ElTrompo.MainWindow"
         mc:Ignorable="d"
         Title="Sistema" Height="350" Width="525" WindowStartupLocation="CenterScreen">
     <Grid x:Name="grdAltaCliente">
@@ -34,6 +34,8 @@
             <Label x:Name="lbl" Content="Alta Cliente" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" FontWeight="Bold" Canvas.Left="15" Canvas.Top="14.143"/>
             <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="10" Click="btnGuardar_Click" Canvas.Left="140" Canvas.Top="275"/>
             <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="11" Canvas.Left="235" Canvas.Top="275"/>
+            <Label x:Name="lblClabeInterna" Content="Clave Interna" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-0.302,-4.68" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="200" Canvas.Top="21"/>
+            <TextBox x:Name="tbClaveInterna" HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="135" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="1" Canvas.Left="288" Canvas.Top="23" IsEnabled="True" IsReadOnly="True" FontSize="14.667"/>
         </Canvas>
 
 

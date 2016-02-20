@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace ElTrompo
 {
@@ -16,6 +17,21 @@ namespace ElTrompo
         SqlConnection con = null;
         SqlCommand cmd = null;
 
+        public string getClaveInterna()
+        {
+            con = new SqlConnection("Data Source=SERVER;Initial Catalog=TROMPO_EysCommerciaNet;User ID=sa;Password=eys");
+            con.Open();
+            string CommandText = "SELECT TOP 1 * FROM dbo.Cliente ORDER BY ClienteId DESC ";
+            cmd = new SqlCommand(CommandText);
+            cmd.Connection = con;
+            rdr = cmd.ExecuteReader();
+            rdr.Read();
+            string valor = rdr.GetSqlValue(0).ToString(); //Es 0 porque se lee el valor [ClienteId] de la tabla dbo.Cliente
+            int valorr = int.Parse(valor.Substring(9)) + 1;
+            string Resultado = "TROMPOTIJ" + valorr.ToString();
+            con.Close();
+            return Resultado;
+        }
 
         public void Cliente()
         {

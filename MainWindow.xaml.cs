@@ -405,7 +405,8 @@ namespace ElTrompo
         public MainWindow()
         {
             InitializeComponent();
-
+            Alta _Alta = new Alta();
+            tbClaveInterna.Text = _Alta.getClaveInterna();
             tbNombre.Focus();
 
             for (int i = 0; i < turno.Length; i++)
