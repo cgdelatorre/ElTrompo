@@ -15,6 +15,8 @@
             <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0,0,0,0" To="-150,0,0,0" AccelerationRatio=".9" Duration="0:0:1" />
         </Storyboard>
         <ImageBrush x:Key="ButtonImage" ImageSource="Resources/HamburgerMenu.png"></ImageBrush>
+        <Image x:Key="ButtonImageAU" Source="Resources/AddUser.png"/>
+        <Image x:Key="ButtonImageSU" Source="Resources/SearchUser.png"/>
         <Style TargetType="Button" x:Key="ButtonStyled">
             <Setter Property="Background" Value="{StaticResource ButtonImage}"></Setter>
             <Setter Property="Template">
@@ -36,11 +38,30 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        <Style TargetType="Button" x:Key="ButtonStyled2">
+            <Setter Property="Background" Value="#FF4E3593"/>
+            <Setter Property="Foreground" Value="#FFFFFFFF"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FFA1C517"/>
+                    <Setter Property="Foreground" Value="#FFFFFFFF"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
 
     </Window.Resources>
 
     <Grid x:Name="grdAltaCliente">
-        <Canvas HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="447" Margin="48,0,0,0">
+        <Canvas HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="469" Margin="48,0,0,0" Background="#FF3AC5C8">
             <Label x:Name="lblNombre" Content="Nombre Completo" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="116" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="15" Canvas.Top="55"/>
             <Label x:Name="lblTelefono" Content="Telefono" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.182,0.5" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="125" Canvas.Top="109"/>
             <Label x:Name="lblCelSec" Content="Celular" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="20" Canvas.Top="109"/>
@@ -64,21 +85,27 @@
 
             <TextBox x:Name="tbColonia" HorizontalAlignment="Left" Height="23" Margin="311,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="7"/>
             <Label x:Name="lbl" Content="Alta Cliente" HorizontalAlignment="Left" Margin="15,14.143,0,0" VerticalAlignment="Top" FontSize="21.333" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" FontWeight="Bold"/>
-            <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="140,275,0,0" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="10" Click="btnGuardar_Click"/>
-            <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="235,275,0,0" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="11"/>
+            <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="140,275,0,0" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="10" Click="btnGuardar_Click" Foreground="White" Background="#FF4E3593"/>
+            <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="235,275,0,0" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="11" Foreground="White" Background="#FF4E3593"/>
             <Label x:Name="lblAltaCliente" Content="Alta Cliente" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" FontWeight="Bold" Canvas.Left="15" Canvas.Top="14.143"/>
 
             <Label x:Name="lblClabeInterna" Content="Clave Interna" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-0.302,-4.68" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="200" Canvas.Top="21"/>
             <TextBox x:Name="tbClaveInterna" HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="135" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="1" Canvas.Left="288" Canvas.Top="23" IsEnabled="True" IsReadOnly="True" FontSize="14.667"/>
         </Canvas>
         <Grid>
-            <StackPanel Panel.ZIndex="2" Name="pnlLeftMenu" Orientation="Horizontal" Height="400" HorizontalAlignment="Left" Margin="-150,0,0,0">
-                <Border BorderBrush="#AF1719" BorderThickness="1" Width="150" Background="#4C808080" >
+            <StackPanel Panel.ZIndex="2" Name="pnlLeftMenu" Orientation="Horizontal" Height="400" HorizontalAlignment="Left" Margin="-150,0,0,0" Background="#FFA1C517">
+
+                <Border  Width="150" Background="#FF552998">
+                    <Canvas Background="#FF552998">
+                        <Label x:Name="lblUsuario" Content="Usuario" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" FontWeight="Bold" FontSize="16" Canvas.Left="43" Foreground="White" />
+                        <Button  x:Name="btnConsultaUsuario" Content="{StaticResource ButtonImageAU}" Height="60" Width="60" Canvas.Top="29" Canvas.Left="10"/>
+                        <Button  x:Name="btnAgregarUsuario" Content="{StaticResource ButtonImageSU}" Height="60" Width="60" Canvas.Left="78" Canvas.Top="29"/>
+                    </Canvas>
 
                 </Border>
                 <Grid>
                     <Button Style="{StaticResource ButtonStyled}" Name="btnLeftMenuHide" Width="48" Height="48" Click="btnLeftMenuHide_Click" Content="" Visibility="Hidden" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,352" />
-                        <Button Style="{StaticResource ButtonStyled}" Name="btnLeftMenuShow" Width="48" Height="48" Click="btnLeftMenuShow_Click"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,352" />
+                    <Button Style="{StaticResource ButtonStyled}" Name="btnLeftMenuShow" Width="48" Height="48" Click="btnLeftMenuShow_Click"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,352" />
                 </Grid>
             </StackPanel>
 
