@@ -408,13 +408,9 @@ namespace ElTrompo
         {
 
             InitializeComponent();
-<<<<<<< HEAD
-
-=======
             
             //Alta _Alta = new Alta();
             //tbClaveInterna.Text = _Alta.getClaveInterna();
->>>>>>> origin/master
             tbNombre.Focus();
 
             for (int i = 0; i < turno.Length; i++)
