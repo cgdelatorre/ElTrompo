@@ -58,6 +58,84 @@
             </Style.Triggers>
         </Style>
 
+        <Style x:Key="MyFocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Control}">
+                        <Grid Margin="3 2">
+                            <Rectangle Name="r1" StrokeThickness="1" Stroke="Black" StrokeDashArray="2 2"/>
+                            <Border Name="border" Width="{TemplateBinding ActualWidth}" Height="{TemplateBinding ActualHeight}"  CornerRadius="2" BorderThickness="1" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ShadowStyle">
+            <Setter Property="Control.Foreground" Value="LightGray" />
+        </Style>
+        <Style x:Key="InformButton" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Margin" Value="1"/>
+            <Setter Property="FontFamily" Value="/ElTrompo;component/#Chalet LondonNineteenSeventy"/>
+            <Setter Property="FontSize" Value="9pt"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="FocusVisualStyle" Value="{StaticResource MyFocusVisual}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+        				BorderThickness="1"
+        				Padding="4,2" 
+        				BorderBrush="DarkGray" 
+        				CornerRadius="5" 
+        				Background="{TemplateBinding Background}">
+                            <Grid >
+                                <ContentPresenter HorizontalAlignment="Center" 
+                                    VerticalAlignment="Center" Name="content"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="#FF4788c8" />
+                                <Setter Property="Foreground" Value="#FF4788c8" />
+                                <Setter Property="Background" Value="#FFA1C517" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" >
+                                    <Setter.Value>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                                            <GradientStop Color="#FFFFD190" Offset="0.35"/>
+                                            <GradientStop Color="#FF4E3593" Offset="0.95"/>
+                                            <GradientStop Color="#FFFFD190" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter TargetName="content" Property="RenderTransform" >
+                                    <Setter.Value>
+                                        <TranslateTransform Y="1.0" />
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsDefaulted" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="#FF282828" />
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="#FF282828" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="border" Property="Opacity" Value="0.7" />
+                                <Setter Property="Foreground" Value="Gray" />
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+
+
     </Window.Resources>
 
     <Grid x:Name="grdAltaCliente">
@@ -85,8 +163,8 @@
 
             <TextBox x:Name="tbColonia" HorizontalAlignment="Left" Height="23" Margin="311,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="7"/>
             <Label x:Name="lbl" Content="Alta Cliente" HorizontalAlignment="Left" Margin="15,14.143,0,0" VerticalAlignment="Top" FontSize="21.333" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" FontWeight="Bold"/>
-            <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="140,275,0,0" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="10" Click="btnGuardar_Click" Foreground="White" Background="#FF4E3593"/>
-            <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="235,275,0,0" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="11" Foreground="White" Background="#FF4E3593"/>
+            <Button Style="{StaticResource InformButton}" x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="140,275,0,0" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="10" Click="btnGuardar_Click" Foreground="White" Background="#FF4E3593" MouseEnter="btnGuardar_MouseEnter" MouseLeave="btnGuardar_MouseLeave"/>
+            <Button Style="{StaticResource InformButton}" x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="235,275,0,0" VerticalAlignment="Top" Width="75" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="11" Foreground="White" Background="#FF4E3593" MouseEnter="btnCancelar_MouseEnter" MouseLeave="btnCancelar_MouseLeave"/>
             <Label x:Name="lblAltaCliente" Content="Alta Cliente" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" FontWeight="Bold" Canvas.Left="15" Canvas.Top="14.143"/>
 
             <Label x:Name="lblClabeInterna" Content="Clave Interna" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-0.302,-4.68" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="200" Canvas.Top="21"/>
@@ -108,7 +186,6 @@
                     <Button Style="{StaticResource ButtonStyled}" Name="btnLeftMenuShow" Width="48" Height="48" Click="btnLeftMenuShow_Click"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,352" />
                 </Grid>
             </StackPanel>
-
         </Grid>
 
 

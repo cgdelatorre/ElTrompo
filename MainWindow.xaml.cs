@@ -697,5 +697,32 @@ namespace ElTrompo
             }
         }
 
+        private void btnGuardar_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Color color = (Color)ColorConverter.ConvertFromString("#FFA1C517");
+            SolidColorBrush brush = new SolidColorBrush(color);
+            btnGuardar.Background = brush;
+        }
+
+        private void btnGuardar_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Color color = (Color)ColorConverter.ConvertFromString("#FF552998");
+            SolidColorBrush brush = new SolidColorBrush(color);
+            btnGuardar.Background = brush;
+        }
+
+        private void btnCancelar_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Color color = (Color)ColorConverter.ConvertFromString("#FFA1C517");
+            SolidColorBrush brush = new SolidColorBrush(color);
+            btnCancelar.Background = brush;
+        }
+
+        private void btnCancelar_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Color color = (Color)ColorConverter.ConvertFromString("#FF552998");
+            SolidColorBrush brush = new SolidColorBrush(color);
+            btnCancelar.Background = brush;
+        }
     }
 }
