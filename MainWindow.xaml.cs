@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Resources;
+using System.Windows.Media.Animation;
 
 
 
@@ -404,7 +406,9 @@ namespace ElTrompo
 
         public MainWindow()
         {
+
             InitializeComponent();
+            
             Alta _Alta = new Alta();
             tbClaveInterna.Text = _Alta.getClaveInterna();
             tbNombre.Focus();
@@ -665,5 +669,33 @@ namespace ElTrompo
             Alta darAlta = new Alta();
             darAlta.Cliente();
         }
+
+        private void btnLeftMenuHide_Click(object sender, RoutedEventArgs e)
+        {
+            ShowHideMenu("sbHideLeftMenu", btnLeftMenuHide, btnLeftMenuShow, pnlLeftMenu);
+        }
+
+        private void btnLeftMenuShow_Click(object sender, RoutedEventArgs e)
+        {
+            ShowHideMenu("sbShowLeftMenu", btnLeftMenuHide, btnLeftMenuShow, pnlLeftMenu);
+        }
+
+        private void ShowHideMenu(string Storyboard, Button btnHide, Button btnShow, StackPanel pnl)
+        {
+            Storyboard sb = Resources[Storyboard] as Storyboard;
+            sb.Begin(pnl);
+
+            if (Storyboard.Contains("Show"))
+            {
+                btnHide.Visibility = System.Windows.Visibility.Visible;
+                btnShow.Visibility = System.Windows.Visibility.Hidden;
+            }
+            else if (Storyboard.Contains("Hide"))
+            {
+                btnHide.Visibility = System.Windows.Visibility.Hidden;
+                btnShow.Visibility = System.Windows.Visibility.Visible;
+            }
+        }
+
     }
 }
