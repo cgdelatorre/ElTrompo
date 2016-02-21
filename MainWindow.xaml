@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ElTrompo"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Class="ElTrompo.MainWindow"
         mc:Ignorable="d"
-        Title="Sistema" Height="350" Width="525" WindowStartupLocation="CenterScreen">
+        Title="Sistema" Height="600" Width="800" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Storyboard x:Key="sbShowLeftMenu" >
             <ThicknessAnimation Storyboard.TargetProperty="Margin" From="-150,0,0,0" To="0,0,0,0" DecelerationRatio=".9" Duration="0:0:1" />
@@ -137,7 +137,7 @@
 
 
     </Window.Resources>
-
+    <Viewbox Stretch="Fill">
     <Grid x:Name="grdAltaCliente">
         <Canvas HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="469" Margin="48,0,0,0" Background="#FF3AC5C8">
             <Label x:Name="lblNombre" Content="Nombre Completo" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="116" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Canvas.Left="15" Canvas.Top="55"/>
@@ -171,23 +171,23 @@
             <TextBox x:Name="tbClaveInterna" HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="135" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" Panel.ZIndex="1" Canvas.Left="288" Canvas.Top="23" IsEnabled="True" IsReadOnly="True" FontSize="14.667"/>
         </Canvas>
         <Grid>
-            <StackPanel Panel.ZIndex="2" Name="pnlLeftMenu" Orientation="Horizontal" Height="400" HorizontalAlignment="Left" Margin="-150,0,0,0" Background="#FFA1C517">
+            <StackPanel Panel.ZIndex="2" Name="pnlLeftMenu" Orientation="Horizontal" HorizontalAlignment="Left" Margin="-150,0,0,0">
 
-                <Border  Width="150" Background="#FF552998">
+                <Border  Width="150">
                     <Canvas Background="#FF552998">
-                        <Label x:Name="lblUsuario" Content="Usuario" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" FontWeight="Bold" FontSize="16" Canvas.Left="43" Foreground="White" />
+                        <Label x:Name="lblUsuario" Content="Cliente" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" FontWeight="Bold" FontSize="16" Canvas.Left="43" Foreground="White" />
                         <Button  x:Name="btnConsultaUsuario" Content="{StaticResource ButtonImageAU}" Height="60" Width="60" Canvas.Top="29" Canvas.Left="10"/>
                         <Button  x:Name="btnAgregarUsuario" Content="{StaticResource ButtonImageSU}" Height="60" Width="60" Canvas.Left="78" Canvas.Top="29"/>
-                    </Canvas>
+                            <Label x:Name="lblAgenda" Content="Agenda" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" FontWeight="Bold" FontSize="16" Canvas.Left="43" Foreground="White" Canvas.Top="94" />
+                        </Canvas>
 
                 </Border>
-                <Grid>
-                    <Button Style="{StaticResource ButtonStyled}" Name="btnLeftMenuHide" Width="48" Height="48" Click="btnLeftMenuHide_Click" Content="" Visibility="Hidden" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,352" />
-                    <Button Style="{StaticResource ButtonStyled}" Name="btnLeftMenuShow" Width="48" Height="48" Click="btnLeftMenuShow_Click"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,352" />
-                </Grid>
+                <Canvas Background="#FFA1C517" Width="50">
+                    <Button Style="{StaticResource ButtonStyled}" Name="btnLeftMenuHide" Width="48" Height="48" Click="btnLeftMenuHide_Click" Content="" FontSize="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,352" />
+                    <Button Style="{StaticResource ButtonStyled}" x:Name="btnLeftMenuShow" Width="48" Height="48" Click="btnLeftMenuShow_Click"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,352" />
+                </Canvas>
             </StackPanel>
         </Grid>
-
-
     </Grid>
+    </Viewbox>
 </Window>

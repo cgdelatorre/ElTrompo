@@ -124,6 +124,12 @@
   <data name="HamburgerMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HamburgerMenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="NewEvent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewEvent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SearchEvent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SearchEvent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="SearchUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SearchUser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
