@@ -431,237 +431,245 @@ namespace ElTrompo
 
         private void cbEstados_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string selection = cbEstados.SelectedItem.ToString();
-
-            switch (selection)
+            try
             {
-                case "Aguascalientes":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < AguascalientesMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(AguascalientesMun[i]);
-                    }
-                    break;
+                string selection = cbEstados.SelectedItem.ToString();
+            
+                switch (selection)
+                {
+                    case "Aguascalientes":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < AguascalientesMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(AguascalientesMun[i]);
+                        }
+                        break;
 
-                case "Baja California":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < BajaCaliforniaMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(BajaCaliforniaMun[i]);
-                    }
-                    break;
+                    case "Baja California":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < BajaCaliforniaMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(BajaCaliforniaMun[i]);
+                        }
+                        break;
 
-                case "Baja California Sur":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < BajaCaliforniaSMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(BajaCaliforniaSMun[i]);
-                    }
-                    break;
-                case "Campeche":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < CampecheMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(CampecheMun[i]);
-                    }
-                    break;
-                case "Coahuila":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < CoahuilaMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(CoahuilaMun[i]);
-                    }
-                    break;
-                case "Colima":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < ColimaMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(ColimaMun[i]);
-                    }
-                    break;
-                case "Chiapas":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < ChiapasMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(ChiapasMun[i]);
-                    }
-                    break;
-                case "Ciudad de Mexico":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < CiudadDeMexicoMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(CiudadDeMexicoMun[i]);
-                    }
-                    break;
-                case "Chihuahua":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < ChihuahuaMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(ChihuahuaMun[i]);
-                    }
-                    break;
-                case "Durango":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < DurangoMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(DurangoMun[i]);
-                    }
-                    break;
-                case "Guanajuato":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < GuanajuatoMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(GuanajuatoMun[i]);
-                    }
-                    break;
-                case "Guerrero":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < GuerreroMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(GuerreroMun[i]);
-                    }
-                    break;
-                case "Hidalgo":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < HidalgoMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(HidalgoMun[i]);
-                    }
-                    break;
-                case "Jalisco":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < JaliscoMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(JaliscoMun[i]);
-                    }
-                    break;
-                case "Mexico":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < MexicoMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(MexicoMun[i]);
-                    }
-                    break;
-                case "Michoacan":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < MichoacanMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(MichoacanMun[i]);
-                    }
-                    break;
-                case "Morelos":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < MorelosMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(MorelosMun[i]);
-                    }
-                    break;
-                case "Nayarit":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < NayaritMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(NayaritMun[i]);
-                    }
-                    break;
-                case "Nuevo Leon":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < NuevoLeonMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(NuevoLeonMun[i]);
-                    }
-                    break;
-                case "Oaxaca":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < OaxacaMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(OaxacaMun[i]);
-                    }
-                    break;
-                case "Puebla":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < PueblaMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(PueblaMun[i]);
-                    }
-                    break;
-                case "Queretaro":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < QueretaroMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(QueretaroMun[i]);
-                    }
-                    break;
-                case "Quintana Roo":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < QuintanaRooMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(QuintanaRooMun[i]);
-                    }
-                    break;
-                case "San Luis Potosi":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < SanLuisPotosiMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(SanLuisPotosiMun[i]);
-                    }
-                    break;
-                case "Sinaloa":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < SinaloaMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(SinaloaMun[i]);
-                    }
-                    break;
-                case "Sonora":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < SonoraMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(SonoraMun[i]);
-                    }
-                    break;
-                case "Tabasco":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < TabascoMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(TabascoMun[i]);
-                    }
-                    break;
-                case "Tamaulipas":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < TamaulipasMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(TamaulipasMun[i]);
-                    }
-                    break;
-                case "Tlaxcala":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < TlaxcalaMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(TlaxcalaMun[i]);
-                    }
-                    break;
-                case "Veracruz":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < VeracruzMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(VeracruzMun[i]);
-                    }
-                    break;
-                case "Yucatan":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < YucatanMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(YucatanMun[i]);
-                    }
-                    break;
-                case "Zacatecas":
-                    cbMunicipios.Items.Clear();
-                    for (int i = 0; i < ZacatecasMun.Length; i++)
-                    {
-                        cbMunicipios.Items.Add(ZacatecasMun[i]);
-                    }
-                    break;
+                    case "Baja California Sur":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < BajaCaliforniaSMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(BajaCaliforniaSMun[i]);
+                        }
+                        break;
+                    case "Campeche":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < CampecheMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(CampecheMun[i]);
+                        }
+                        break;
+                    case "Coahuila":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < CoahuilaMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(CoahuilaMun[i]);
+                        }
+                        break;
+                    case "Colima":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < ColimaMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(ColimaMun[i]);
+                        }
+                        break;
+                    case "Chiapas":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < ChiapasMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(ChiapasMun[i]);
+                        }
+                        break;
+                    case "Ciudad de Mexico":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < CiudadDeMexicoMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(CiudadDeMexicoMun[i]);
+                        }
+                        break;
+                    case "Chihuahua":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < ChihuahuaMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(ChihuahuaMun[i]);
+                        }
+                        break;
+                    case "Durango":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < DurangoMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(DurangoMun[i]);
+                        }
+                        break;
+                    case "Guanajuato":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < GuanajuatoMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(GuanajuatoMun[i]);
+                        }
+                        break;
+                    case "Guerrero":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < GuerreroMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(GuerreroMun[i]);
+                        }
+                        break;
+                    case "Hidalgo":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < HidalgoMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(HidalgoMun[i]);
+                        }
+                        break;
+                    case "Jalisco":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < JaliscoMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(JaliscoMun[i]);
+                        }
+                        break;
+                    case "Mexico":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < MexicoMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(MexicoMun[i]);
+                        }
+                        break;
+                    case "Michoacan":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < MichoacanMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(MichoacanMun[i]);
+                        }
+                        break;
+                    case "Morelos":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < MorelosMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(MorelosMun[i]);
+                        }
+                        break;
+                    case "Nayarit":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < NayaritMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(NayaritMun[i]);
+                        }
+                        break;
+                    case "Nuevo Leon":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < NuevoLeonMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(NuevoLeonMun[i]);
+                        }
+                        break;
+                    case "Oaxaca":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < OaxacaMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(OaxacaMun[i]);
+                        }
+                        break;
+                    case "Puebla":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < PueblaMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(PueblaMun[i]);
+                        }
+                        break;
+                    case "Queretaro":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < QueretaroMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(QueretaroMun[i]);
+                        }
+                        break;
+                    case "Quintana Roo":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < QuintanaRooMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(QuintanaRooMun[i]);
+                        }
+                        break;
+                    case "San Luis Potosi":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < SanLuisPotosiMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(SanLuisPotosiMun[i]);
+                        }
+                        break;
+                    case "Sinaloa":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < SinaloaMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(SinaloaMun[i]);
+                        }
+                        break;
+                    case "Sonora":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < SonoraMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(SonoraMun[i]);
+                        }
+                        break;
+                    case "Tabasco":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < TabascoMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(TabascoMun[i]);
+                        }
+                        break;
+                    case "Tamaulipas":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < TamaulipasMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(TamaulipasMun[i]);
+                        }
+                        break;
+                    case "Tlaxcala":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < TlaxcalaMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(TlaxcalaMun[i]);
+                        }
+                        break;
+                    case "Veracruz":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < VeracruzMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(VeracruzMun[i]);
+                        }
+                        break;
+                    case "Yucatan":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < YucatanMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(YucatanMun[i]);
+                        }
+                        break;
+                    case "Zacatecas":
+                        cbMunicipios.Items.Clear();
+                        for (int i = 0; i < ZacatecasMun.Length; i++)
+                        {
+                            cbMunicipios.Items.Add(ZacatecasMun[i]);
+                        }
+                        break;
+                    default:
+                        cbMunicipios.SelectedIndex = -1;
+                        cbEstados.SelectedIndex = -1;
+                        break;
+                }
             }
+            catch { }
         }
 
         private void btnGuardar_Click(object sender, RoutedEventArgs e)
@@ -723,6 +731,60 @@ namespace ElTrompo
             Color color = (Color)ColorConverter.ConvertFromString("#FF552998");
             SolidColorBrush brush = new SolidColorBrush(color);
             btnCancelar.Background = brush;
+        }
+
+        private void btnAgregarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            if (cvBienvenida.IsVisible == true)
+            {
+                cvBienvenida.Visibility = System.Windows.Visibility.Hidden;
+                cvBienvenida.IsEnabled = false;
+            }
+            if (cvAltaCliente.IsVisible == true)
+            {
+                cvConsultaCliente.Visibility = System.Windows.Visibility.Hidden;
+                cvConsultaCliente.IsEnabled = false;
+            }
+            cvAltaCliente.Visibility = System.Windows.Visibility.Visible;
+            cvAltaCliente.IsEnabled = true;
+            ShowHideMenu("sbHideLeftMenu", btnLeftMenuHide, btnLeftMenuShow, pnlLeftMenu);
+        }
+
+        private void btnConsultaUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            if (cvBienvenida.IsVisible == true)
+            {
+                cvBienvenida.Visibility = System.Windows.Visibility.Hidden;
+                cvBienvenida.IsEnabled = false;
+            }
+            if (cvAltaCliente.IsVisible == true)
+            {
+                cvAltaCliente.Visibility = System.Windows.Visibility.Hidden;
+                cvAltaCliente.IsEnabled = false;
+            }
+            cvConsultaCliente.Visibility = System.Windows.Visibility.Visible;
+            cvConsultaCliente.IsEnabled = true;
+            ShowHideMenu("sbHideLeftMenu", btnLeftMenuHide, btnLeftMenuShow, pnlLeftMenu);
+
+        }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            tbClaveInterna.Clear();
+            tbNombre.Clear();
+            tbClave.Clear();
+            tbTelefono.Clear();
+            tbCelular.Clear();
+            tbCorreoElectronico.Clear();
+            tbColonia.Clear();
+            cbEstados.SelectedItem = null;
+            cbMunicipios.SelectedItem = null;
+            cbSector.SelectedIndex = -1;
+            cbTurno.SelectedIndex = -1;
+            cvAltaCliente.Visibility = System.Windows.Visibility.Hidden;
+            cvAltaCliente.IsEnabled = false;
+            cvBienvenida.Visibility = System.Windows.Visibility.Visible;
+            cvBienvenida.IsEnabled = true;
         }
     }
 }
