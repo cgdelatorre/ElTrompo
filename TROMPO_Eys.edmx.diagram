@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2cde0a49d4a745b1a3ab6411b075c1b1" Name="Diagram1" ZoomLevel="100">
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Actividad" Width="1.5" PointX="9.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ActividadAdjunto" Width="1.5" PointX="9.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ActividadResultado" Width="1.5" PointX="2.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Almacen" Width="1.5" PointX="4.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Arancel" Width="1.5" PointX="6.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Articulo" Width="1.5" PointX="11.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ArticuloCompuesto" Width="1.5" PointX="13.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ArticuloDemanda" Width="1.5" PointX="13.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ArticuloExterno" Width="1.5" PointX="13.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Bitacora" Width="1.5" PointX="8.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.BitacoraConfiguracion" Width="1.5" PointX="0.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.BitacoraConfiguracionUsuario" Width="1.5" PointX="13.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Calle" Width="1.5" PointX="15.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.CambioPrecioDocumento" Width="1.5" PointX="15.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.CambioPrecioMovimiento" Width="1.5" PointX="15.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Campana" Width="1.5" PointX="15.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.CampanaActividad" Width="1.5" PointX="2.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.CampanaTipo" Width="1.5" PointX="4.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Cliente" Width="1.5" PointX="15.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ClienteCFD" Width="1.5" PointX="17.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Codigo" Width="1.5" PointX="17.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Colector" Width="1.5" PointX="6.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ColectorArticulo" Width="1.5" PointX="8.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Comunica" Width="1.5" PointX="17.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Concepto" Width="1.5" PointX="17.75" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Consulta" Width="1.5" PointX="19.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ConsultaCampo" Width="1.5" PointX="0.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ConsultaMenu" Width="1.5" PointX="2.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Contacto" Width="1.5" PointX="19.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Costeo" Width="1.5" PointX="19.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Costo" Width="1.5" PointX="8.75" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.CrmDocumento" Width="1.5" PointX="19.75" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.CrmDocumentoActividad" Width="1.5" PointX="21.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Documento" Width="1.5" PointX="21.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.DocumentoCFD" Width="1.5" PointX="21.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.DocumentoConceptoPago" Width="1.5" PointX="2.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.DocumentoObservacion" Width="1.5" PointX="4.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.DocumentoPagoElectronico" Width="1.5" PointX="23.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.DocumentoPedimento" Width="1.5" PointX="23.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.DocumentoReferencia" Width="1.5" PointX="23.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.DocumentoRelacionado" Width="1.5" PointX="23.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Empaque" Width="1.5" PointX="23.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Empresa" Width="1.5" PointX="23.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.EmpresaCFD" Width="1.5" PointX="6.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.EmpresaGrupo" Width="1.5" PointX="8.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.EmpresaUsuario" Width="1.5" PointX="2.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Estado" Width="1.5" PointX="10.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Estatu" Width="1.5" PointX="12.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.EtiquetaImprime" Width="1.5" PointX="25.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Existencia" Width="1.5" PointX="25.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Familia" Width="1.5" PointX="8.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.FamiliaArticulo" Width="1.5" PointX="11" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Flete" Width="1.5" PointX="25.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.FleteTipo" Width="1.5" PointX="17.75" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.FolioCFD" Width="1.5" PointX="19.75" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Formula" Width="1.5" PointX="25.75" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.FormulaRelacion" Width="1.5" PointX="25.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Fraccion" Width="1.5" PointX="0.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Impresor" Width="1.5" PointX="2.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ImpresorSistema" Width="1.5" PointX="27.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Impuesto" Width="1.5" PointX="27.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.InventarioMovimiento" Width="1.5" PointX="8.75" PointY="29.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Linea" Width="1.5" PointX="27.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Lista" Width="1.5" PointX="27.75" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ListaDetalle" Width="1.5" PointX="27.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Margen" Width="1.5" PointX="25.75" PointY="29.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.MargenPorcentaje" Width="1.5" PointX="27.75" PointY="29.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.MenuElemento" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.MenuUsuario" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Moneda" Width="1.5" PointX="10.75" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Movimiento" Width="1.5" PointX="12.75" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.MovimientoFormula" Width="1.5" PointX="29.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.MovimientoObservacion" Width="1.5" PointX="29.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.MovimientoReferencia" Width="1.5" PointX="4.75" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Municipio" Width="1.5" PointX="29.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.OfertaCompra" Width="1.5" PointX="29.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.OfertaVenta" Width="1.5" PointX="29.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.OfertaVentaArticulo" Width="1.5" PointX="17.75" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Operacion" Width="1.5" PointX="19.75" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.OperacionColumna" Width="1.5" PointX="29.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Ordena" Width="1.5" PointX="29.75" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Pai" Width="1.5" PointX="31.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.PedimentoCosteo" Width="1.5" PointX="0.75" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Permiso" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.PermisoUsuario" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Precio" Width="1.5" PointX="31.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ProduccionMovimiento" Width="1.5" PointX="31.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Promocion" Width="1.5" PointX="31.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.PromocionCliente" Width="1.5" PointX="31.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Proveedor" Width="1.5" PointX="31.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Punto" Width="1.5" PointX="2.75" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Reporte" Width="1.5" PointX="4.75" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Resultado" Width="1.5" PointX="6.75" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Ruta" Width="1.5" PointX="8.75" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Sucursal" Width="1.5" PointX="14.75" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.sysdiagram" Width="1.5" PointX="25.75" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Tarea" Width="1.5" PointX="27.75" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Tecla" Width="1.5" PointX="33.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.TipoCambioOficial" Width="1.5" PointX="33.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.TipoCliente" Width="1.5" PointX="33.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.TipoFamilia" Width="1.5" PointX="33.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Transaccion" Width="1.5" PointX="33.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.TransaccionEstatu" Width="1.5" PointX="33.75" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Turno" Width="1.5" PointX="33.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Ubicacion" Width="1.5" PointX="4.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.UbicacionArticulo" Width="1.5" PointX="7" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Usuario" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.UsuarioLog" Width="1.5" PointX="33.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Variable" Width="1.5" PointX="33.75" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Vendedor" Width="1.5" PointX="33.75" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.VentaPerdida" Width="1.5" PointX="16.75" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Zona" Width="1.5" PointX="35.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.EtiMov" Width="1.5" PointX="35.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ExtArticulo" Width="1.5" PointX="6.75" PointY="37.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Mix" Width="1.5" PointX="35.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ProcesoImagen" Width="1.5" PointX="8.75" PointY="37.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ProcesoLinea" Width="1.5" PointX="35.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ProcesoObjeto" Width="1.5" PointX="35.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.ProcesoProyectoNombre" Width="1.5" PointX="35.75" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.Information_Schema_Articulo" Width="1.5" PointX="35.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TROMPO_EysCommerciaNetModel.MovimientoPedimento" Width="1.5" PointX="35.75" PointY="32.875" IsExpanded="true" />
+        <AssociationConnector Association="TROMPO_EysCommerciaNetModel.FK_EmpresaUsuario_EmpresaUsuario" ManuallyRouted="false" />
+        <AssociationConnector Association="TROMPO_EysCommerciaNetModel.FK_FamiliaArticulo_Familia" ManuallyRouted="false" />
+        <AssociationConnector Association="TROMPO_EysCommerciaNetModel.FK_MenuUsuario_MenuElemento" ManuallyRouted="false" />
+        <AssociationConnector Association="TROMPO_EysCommerciaNetModel.FK_MenuUsuario_Permiso" ManuallyRouted="false" />
+        <AssociationConnector Association="TROMPO_EysCommerciaNetModel.FK_Permiso_PermisoUsuario" ManuallyRouted="false" />
+        <AssociationConnector Association="TROMPO_EysCommerciaNetModel.FK_PermisoUsuario_Permiso" ManuallyRouted="false" />
+        <AssociationConnector Association="TROMPO_EysCommerciaNetModel.FK_UbicacionArticulo_Ubicacion" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

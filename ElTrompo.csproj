@@ -34,9 +34,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -79,6 +90,393 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Actividad.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActividadAdjunto.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActividadResultado.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Arancel.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Articulo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloCompuesto.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloDemanda.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloExterno.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bitacora.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BitacoraConfiguracion.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BitacoraConfiguracionUsuario.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Calle.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CambioPrecioDocumento.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CambioPrecioMovimiento.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Campana.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CampanaActividad.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CampanaTipo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteCFD.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Codigo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Colector.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ColectorArticulo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Comunica.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concepto.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaCampo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaMenu.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Contacto.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Costeo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Costo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CrmDocumento.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CrmDocumentoActividad.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Documento.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentoCFD.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentoConceptoPago.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentoObservacion.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentoPagoElectronico.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentoPedimento.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentoReferencia.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentoRelacionado.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Empaque.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpresaCFD.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpresaGrupo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpresaUsuario.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Estado.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Estatu.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EtiMov.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EtiquetaImprime.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Existencia.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtArticulo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Familia.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FamiliaArticulo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Flete.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FleteTipo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FolioCFD.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Formula.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaRelacion.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Fraccion.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Impresor.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ImpresorSistema.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Impuesto.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Information_Schema_Articulo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventarioMovimiento.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Linea.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Lista.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDetalle.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Margen.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MargenPorcentaje.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MenuElemento.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUsuario.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mix.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Moneda.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovimientoFormula.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovimientoObservacion.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovimientoPedimento.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MovimientoReferencia.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Municipio.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OfertaCompra.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OfertaVenta.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OfertaVentaArticulo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Operacion.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OperacionColumna.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ordena.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pai.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PedimentoCosteo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Permiso.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PermisoUsuario.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Precio.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProcesoImagen.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProcesoLinea.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProcesoObjeto.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProcesoProyectoNombre.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProduccionMovimiento.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Promocion.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PromocionCliente.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedor.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Punto.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Resultado.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ruta.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_RevisionCapaCosteo_Result.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sucursal.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tecla.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoCambioOficial.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoCliente.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoFamilia.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Transaccion.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransaccionEstatu.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TROMPO_Eys.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TROMPO_Eys.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TROMPO_Eys.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TROMPO_Eys.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TROMPO_Eys.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Turno.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicacion.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UbicacionArticulo.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioLog.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Variable.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vendedor.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VentaPerdida.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Zona.cs">
+      <DependentUpon>TROMPO_Eys.tt</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -118,10 +516,19 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <EntityDeploy Include="TROMPO_Eys.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TROMPO_Eys.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="TROMPO_Eys.edmx.diagram">
+      <DependentUpon>TROMPO_Eys.edmx</DependentUpon>
+    </None>
     <Resource Include="ufonts.com_chalet-londonnineteenseventy-opentype.otf" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\HamburgerMenu.png" />
@@ -143,6 +550,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Bienvenida.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TROMPO_Eys.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TROMPO_Eys.edmx</DependentUpon>
+      <LastGenOutput>TROMPO_Eys.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="TROMPO_Eys.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TROMPO_Eys.edmx</DependentUpon>
+      <LastGenOutput>TROMPO_Eys.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

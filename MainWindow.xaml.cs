@@ -408,5 +408,14 @@ namespace ElTrompo
             cvBienvenida.Visibility = System.Windows.Visibility.Visible;
             cvBienvenida.IsEnabled = true;
         }
+
+        private void tbbuscar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var searchableText = tbbuscar.Text;
+            var data = dgConsulta.Items;
+
+            //data[0].Nombre.Contains(searchableText) || data[0].Apellido.Contains(searchableText)
+            // search over columns/properties in data
+        }
     }
 }

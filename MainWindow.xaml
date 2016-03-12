@@ -187,7 +187,7 @@
 
             </Canvas>
             <Canvas x:Name="cvConsultaCliente" HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="517" IsEnabled="True" Visibility="Visible">
-                <TextBox x:Name="tbbuscar" Height="23" Canvas.Left="139" TextWrapping="Wrap" Text="TextBox" Canvas.Top="38" Width="120"/>
+                <TextBox x:Name="tbbuscar" Height="23" Canvas.Left="139" TextWrapping="Wrap" Text="TextBox" Canvas.Top="38" Width="120" TextChanged="tbbuscar_TextChanged"/>
                 <Label x:Name="lblConsultaCliente" Content="Consulta Cliente" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" FontFamily="/ElTrompo;component/#Chalet LondonNineteenSeventy" FontWeight="Bold" Canvas.Left="189"/>
                 <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="264" Canvas.Top="38" RenderTransformOrigin="1.043,0.174" Height="24" Width="74" />
                 <DataGrid x:Name="dgConsulta" Canvas.Left="10" Canvas.Top="67" Height="242" Width="497" />
